@@ -12,7 +12,9 @@
     </head>
     <body>
         <header id="header">
-            <img id="header-img" src="" alt="company logo"/>
+            <div id="logo">
+                <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Steinway_and_Sons_logo.svg" alt="company logo"/>
+            </div>
             <nav id="nav-bar">
                 <a class="nav-link" href="#features">Features</a>
                 <a class="nav-link" href="#features">Quality</a>
@@ -20,11 +22,52 @@
             </nav>
         </header>
         <main>
-            <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <input id="email" type="email" placeholder="Enter your email address" required/>
-                <input id="submit" type="submit" value="Submit"/>
-            </form>
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/jAInt7hIZlU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id="form-wrapper">
+                <h1>Quality, since 1853</h1>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input id="email" type="email" placeholder="Enter your email address" required/>
+                    <input id="submit" type="submit" value="Submit"/>
+                </form>
+            </div>
+            <div id="feature-section">
+                <div class="feature-wrapper">
+                    <img class="check-piano" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fendlessicons.com%2Fwp-content%2Fuploads%2F2013%2F02%2Fpiano-icon.png&f=1&nofb=1" alt="Piano logo"/>
+                    <p class="feauter-text">For over 160 years, Steinway &amp; Sons has been dedicated to making the finest pianos in the world.</p>
+                </div>
+                <div class="feature-wrapper">
+                    <img class="check-piano" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fendlessicons.com%2Fwp-content%2Fuploads%2F2013%2F02%2Fpiano-icon.png&f=1&nofb=1" alt="Piano logo"/>
+                    <p class="feauter-text">Our pioneering handcrafted methods are still employed today to ensure our uncompromising standards of quality.</p>
+                </div>
+                
+                <div class="feature-wrapper">
+                    <img class="check-piano" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fendlessicons.com%2Fwp-content%2Fuploads%2F2013%2F02%2Fpiano-icon.png&f=1&nofb=1" alt="Piano logo"/>
+                    <p class="feauter-text">Steinway remains the peerless instrument of uncompromising expression.</p>
+                </div>
+            </div>
+            <div id="wrapper">
+                <iframe id="video" src="https://www.youtube.com/embed/jAInt7hIZlU" allowfullscreen></iframe>
+            </div>
+
+            <div id="buy-wrapper">
+                <div class="item">
+                    <p class="item-name">Model D</p>
+                    <p class="price">$171,000</p>
+                    <p class="size">Size: <em>8' 11.75"</em></p>
+                    <button class="select">Select</button>
+                </div>
+                <div class="item">
+                    <p class="item-name">Model B</p>
+                    <p class="price">$109,000</p>
+                    <p class="size">Size: <em>6' 10.5"</em></p>
+                    <button class="select">Select</button>
+                </div>
+                <div class="item">
+                    <p class="item-name">Model A</p>
+                    <p class="price">$96,000</p>
+                    <p class="size">Size: <em>6'2"</em></p>
+                    <button class="select">Select</button>                
+                </div>
+            </div>
         </main>
     </body>
 </html>
