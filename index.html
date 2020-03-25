@@ -16,17 +16,17 @@
                 <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Steinway_and_Sons_logo.svg" alt="company logo"/>
             </div>
             <nav id="nav-bar">
-                <a class="nav-link" href="#features">Features</a>
-                <a class="nav-link" href="#features">Quality</a>
-                <a class="nav-link" href="#pricing">Pricing</a>
+                <a class="nav-link" href="#feature-section">Features</a>
+                <a class="nav-link" href="#wrapper">Quality</a>
+                <a class="nav-link" href="#buy-wrapper">Pricing</a>
             </nav>
         </header>
         <main>
             <div id="form-wrapper">
                 <h1>Quality, since 1853</h1>
-                <form id="form" action="https://www.freecodecamp.com/email-submit">
-                    <input id="email" type="email" placeholder="Enter your email address" required/>
-                    <input id="submit" type="submit" value="Submit"/>
+                <form name="email" id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input name="email" id="email" type="email" placeholder="Enter your email address" required/>
+                    <input name="email" id="submit" type="submit" value="Submit"/>
                 </form>
             </div>
             <div id="feature-section">
@@ -53,21 +53,33 @@
                     <p class="item-name">Model D</p>
                     <p class="price">$171,000</p>
                     <p class="size">Size: <em>8' 11.75"</em></p>
-                    <button class="select">Select</button>
+                    <button type="button" class="select">Select</button>
                 </div>
                 <div class="item">
                     <p class="item-name">Model B</p>
                     <p class="price">$109,000</p>
                     <p class="size">Size: <em>6' 10.5"</em></p>
-                    <button class="select">Select</button>
+                    <button type="button" class="select">Select</button>
                 </div>
                 <div class="item">
                     <p class="item-name">Model A</p>
                     <p class="price">$96,000</p>
                     <p class="size">Size: <em>6'2"</em></p>
-                    <button class="select">Select</button>                
+                    <button type="button" class="select">Select</button>                
                 </div>
             </div>
+            <footer>
+                <div id="footer">
+                    <div id="footer-links">
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div id="footer-copyright">
+                        <p>Copyright 2020, Steinways &amp; Sons</p>
+                    </div>
+                </div>
+            </footer>
         </main>
     </body>
 </html>

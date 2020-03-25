@@ -2,6 +2,15 @@ body {
     font-family: "Fira Sans", sans-serif;
     font-size: 18px;
     background-color: rgb(240,240,240);
+    --highlight-color: rgb(104, 77, 224);
+    --hovered-color: rgb(85, 63, 182);
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+#footer a {
+    margin: 10px;
 }
 #header {
     display: flex;
@@ -54,7 +63,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 }
 #wrapper {
     z-index: -1;
@@ -63,7 +72,21 @@ body {
     padding-top: 28.12%;
     /*28.12% because it's half of the 16:9 aspect ratio*/
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 75px;
+}
+#submit {
+    border-radius: 0;
+    background-color: var(--highlight-color);
+    color: white;
+    font-family: inherit;
+    font-size: inherit;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+#email {
+    font-family: inherit;
+    font-size: inherit;
+    font-size: 0.8em;
 }
 #video {
     position: absolute;
@@ -89,6 +112,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 25px;
 }
 .item {
     background-color: white;
@@ -114,8 +138,33 @@ body {
     padding: 5px 15px 5px 15px;
     border: none;
     border-radius: 0;
-    background-color: #F1C40F;
+    background-color: var(--highlight-color);
+    color: white;
     align-self: center;
+    /* When animating the hover state of a button use the transition-duration attribute */
+    transition-duration: 0.2s;
+    
+}
+.select:hover {
+    background-color: var(--hovered-color);
+    animation-name: wiggle;
+    animation-duration: 0.25s;
+}
+@keyframes wiggle {
+    25% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+}
+#footer {
+    background-color: lightgray;
+    padding: 20px;
+    font-size: 0.75em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 main {
     margin-top: 100px;
